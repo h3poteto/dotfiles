@@ -1,0 +1,35 @@
+!! UXTerm
+UXTerm*utf8              : 1
+UXTerm*locale            : true
+UXTerm*faceName          : Ubuntu Mono derivative Powerline:style=Regular
+UXTerm*faceSize          : 13
+UXTerm*background        : black
+UXTerm*foreground        : white
+UXTerm*saveLines         : 20000
+
+!! rxvt
+URxvt.scrollBar_right:      true
+URxvt.scrollBar_floating:   false
+URxvt.scrollstyle:          xterm
+URxvt.font:                 xft:Ubuntu Mono derivative Powerline-13,\
+                            xft:Ricty Diminished Discord
+
+URxvt.depth:       32
+URxvt.color0:      [100]#000000    /* black          */
+URxvt.color1:      [100]#cd0000    /* red            */
+URxvt.color2:      [100]#00cd00    /* green          */
+URxvt.color3:      [100]#cdcd00    /* yellow         */
+URxvt.color4:      [100]#3c8cf3    /* blue           */
+URxvt.color5:      [100]#cd00cd    /* magenta        */
+URxvt.color6:      [100]#00cdcd    /* cyan           */
+URxvt.color7:      [100]#faebd7    /* white          */
+URxvt.color8:      [100]#404040    /* bright black   */
+URxvt.color9:      [100]#ff0000    /* bright red     */
+URxvt.color10:     [100]#00ff00    /* bright green   */
+URxvt.color11:     [100]#ffff00    /* bright yellow  */
+URxvt.color12:     [100]#729fcf    /* bright blue    */
+URxvt.color13:     [100]#ff00ff    /* bright magenta */
+URxvt.color14:     [100]#00ffff    /* bright cyan    */
+URxvt.color15:     [100]#ffffff    /* bright white   */
+URxvt.foreground:           [100]#ffffff
+URxvt.background:           [75]#000000
