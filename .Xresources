@@ -10,7 +10,10 @@ UXTerm*saveLines         : 20000
 !! rxvt
 URxvt.scrollBar_right:      true
 URxvt.scrollBar_floating:   false
-URxvt.scrollstyle:          xterm
+URxvt.scrollstyle:          plain
+URxvt.cursorBlink:          true
+URxvt.visualBell:           true
+URxvt.saveLines:            30000
 URxvt.font:                 xft:Ubuntu Mono derivative Powerline-13,\
                             xft:Ricty Diminished Discord
 
@@ -33,3 +36,4 @@ URxvt.color14:     [100]#00ffff    /* bright cyan    */
 URxvt.color15:     [100]#ffffff    /* bright white   */
 URxvt.foreground:           [100]#ffffff
 URxvt.background:           [75]#000000
+URxvt.scrollColor:          [90]#504945
