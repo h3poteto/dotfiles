@@ -59,7 +59,7 @@ font-2 = siji:pixelsize=10;1
 font-3 = Material Icons:size=13;4
 
 
-modules-left = launcher bspwm i3 xwindow
+modules-left = launcher bspwm i3 filer xwindow
 modules-center =
 modules-right = deadd filesystem pulseaudio cpu memory date powermenu
 
@@ -429,6 +429,13 @@ content = ""
 content-margin = 4
 content-underline = ${colors.primary}
 click-left = kill -s USR1 $(pidof deadd-notification-center)
+
+[module/filer]
+type = custom/text
+content = ""
+content-margin = 2
+content-underline = ${colors.primary}
+click-left = nemo
 
 [settings]
 screenchange-reload = true
