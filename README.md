@@ -43,8 +43,9 @@ $ ln -s ~/dotfiles/.config/picom ~/.config/picom
 - pulseaudio
 - ulauncher
 - bspwm
+- maim
 
 ```
-$ yay -S i3 i3lock-fancy polybar deadd-notification-center picom pulseaudio ulauncher bspwm
+$ yay -S i3 i3lock-fancy polybar deadd-notification-center picom pulseaudio ulauncher bspwm maim
 ```
 

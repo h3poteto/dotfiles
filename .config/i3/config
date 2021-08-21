@@ -193,6 +193,11 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# Screenshots
+bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/Screenshot from $(date \"+%Y-%m-%d-%H-%M-%S\").png"
+bindsym Control+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/Screenshot from $(date \"+%Y-%m-%d-%H-%M-%S\").png"
+bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/Pictures/Screenshot from $(date \"+%Y-%m-%d-%H-%M-%S\").png"
+
 # Window title bar
 title_align center
 # class                 border  backgr. text    indicator child_border
