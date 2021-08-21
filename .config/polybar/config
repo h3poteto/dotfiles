@@ -59,7 +59,7 @@ font-2 = siji:pixelsize=10;1
 font-3 = Material Icons:size=13;4
 
 
-modules-left = launcher bspwm i3 filer xwindow
+modules-left = launcher i3 filer xwindow
 modules-center =
 modules-right = deadd filesystem pulseaudio cpu memory date powermenu
 
