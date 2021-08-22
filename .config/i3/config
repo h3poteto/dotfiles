@@ -37,8 +37,14 @@ exec --no-startup-id picom -CGbm 0.75
 # Ibus and mozc
 exec --no-startup-id ibus-daemon -drx
 
-# For clipboard
+# Clipboard
 exec --no-startup-id parcellite
+
+# Update notifier
+exec --no-startup-id "sh -c \"GDK_BACKEND=x11 pamac-tray\""
+
+# Print Queue Applet
+exec --no-startup-id system-config-printer-applet
 
 # Background image
 exec --no-startup-id "feh --bg-scale $HOME/OneDrive/images/Ubuntu-14-04-Default-Background-Jelly-Fish-004.jpg"
