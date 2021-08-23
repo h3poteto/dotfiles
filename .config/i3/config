@@ -37,6 +37,9 @@ exec --no-startup-id picom -CGbm 0.75
 # Ibus and mozc
 exec --no-startup-id ibus-daemon -drx
 
+# Notification center
+exec --no-startup-id deadd-notification-center
+
 # Clipboard
 exec --no-startup-id parcellite
 
