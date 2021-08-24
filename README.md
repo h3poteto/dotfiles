@@ -42,6 +42,16 @@ $ rm -rf fonts
 $ ln -s ~/dotfiles/.config/powerline ~/.config/powerline
 ```
 
+In darwin, please install psutil to get system information.
+```
+$ pip install psutil
+```
+
+### tmux
+Read [tmux](./tmux/README.md).
+
+
+
 ## Dependencies
 - i3
 - i3lock-fancy
