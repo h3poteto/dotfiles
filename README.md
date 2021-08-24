@@ -34,6 +34,11 @@ $ ln -s ~/dotfiles/.config/deadd ~/.config/deadd
 $ ln -s ~/dotfiles/.config/picom ~/.config/picom
 ```
 
+### powerline
+```
+$ ln -s ~/dotfiles/.config/powerline ~/.config/powerline
+```
+
 ## Dependencies
 - i3
 - i3lock-fancy
