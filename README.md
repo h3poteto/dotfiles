@@ -36,6 +36,9 @@ $ ln -s ~/dotfiles/.config/picom ~/.config/picom
 
 ### powerline
 ```
+$ git clone https://github.com/powerline/fonts.git
+$ fonts/install.sh
+$ rm -rf fonts
 $ ln -s ~/dotfiles/.config/powerline ~/.config/powerline
 ```
 
@@ -48,8 +51,13 @@ $ ln -s ~/dotfiles/.config/powerline ~/.config/powerline
 - pulseaudio
 - ulauncher
 - maim
+- powerline
 
 ```
 $ yay -S i3 i3lock-fancy polybar deadd-notification-center picom pulseaudio ulauncher maim
+```
+
+```
+$ pip install powerline-status
 ```
 
