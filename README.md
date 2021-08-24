@@ -48,7 +48,7 @@ $ pip install psutil
 ```
 
 ### tmux
-Read [tmux](./tmux/README.md).
+Read [tmux](./.tmux).
 
 
 
