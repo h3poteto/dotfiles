@@ -54,6 +54,9 @@ brew install reattach-to-user-namespace
 
 
 # Install
+```
+$ ln -s ~/dotfiles/.tmux ~/.tmux
+```
 
 
 Please copy `.tmux.conf.sample`,
@@ -65,5 +68,5 @@ and modify it.
 ```
 run-shell "powerline-daemon -q"
 source ~/.pyenv/versions/3.6.5/lib/python3.6/site-packages/powerline/bindings/tmux/powerline.conf
-source ~/dotfiles/.tmux/tmux.conf
+source ~/.tmux/tmux.conf
 ```
