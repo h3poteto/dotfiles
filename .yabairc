@@ -29,6 +29,8 @@ yabai -m config left_padding                 0
 yabai -m config right_padding                0
 yabai -m config window_gap                   06
 
+yabai -m rule --add app=Emacs manage=on
+
 # restore position of floating windows when they are manually unfloated
 # ~/Scripts/yabai_restore.sh
 
