@@ -12,6 +12,7 @@ $ git clone git@github.com:h3poteto/dotfiles.git
 ```
 $ ln -s ~/dotfiles/.Xresources ~/.Xresources
 $ xrdb .Xresources
+$ ln -s ~/dotfiles/.xprofile ~/.xprofile
 ```
 
 ### i3
