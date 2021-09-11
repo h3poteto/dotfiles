@@ -7,14 +7,14 @@ Xft.antialias:  1
 Xft.rgba:       rgb
 
 Emacs.FontBackend: xft
-Emacs.font: Ubuntu Mono-12
+Emacs.font: Ubuntu Mono-11
 
 
 !! UXTerm
 UXTerm*utf8              : 1
 UXTerm*locale            : true
 UXTerm*faceName          : Ubuntu Mono derivative Powerline:style=Regular
-UXTerm*faceSize          : 13
+UXTerm*faceSize          : 11
 UXTerm*background        : black
 UXTerm*foreground        : white
 UXTerm*saveLines         : 20000
@@ -26,7 +26,7 @@ URxvt.scrollstyle:          plain
 URxvt.cursorBlink:          true
 URxvt.visualBell:           true
 URxvt.saveLines:            30000
-URxvt.font:                 xft:Ubuntu Mono derivative Powerline-13,\
+URxvt.font:                 xft:Ubuntu Mono derivative Powerline-11,\
                             xft:Ricty Diminished Discord
 
 URxvt.depth:       32
