@@ -210,6 +210,9 @@ bindsym Print exec --no-startup-id maim "/home/$USER/Pictures/Screenshot from $(
 bindsym Control+Print exec --no-startup-id maim --window $(xdotool getactivewindow) "/home/$USER/Pictures/Screenshot from $(date \"+%Y-%m-%d-%H-%M-%S\").png"
 bindsym Shift+Print exec --no-startup-id maim --select "/home/$USER/Pictures/Screenshot from $(date \"+%Y-%m-%d-%H-%M-%S\").png"
 
+# Textpander
+bindsym $mod+d exec --no-startup-id "/home/$USER/Applications/texpander/texpander.sh"
+
 # Window title bar
 title_align center
 # class                 border  backgr. text    indicator child_border
