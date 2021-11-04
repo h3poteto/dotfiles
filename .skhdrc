@@ -4,6 +4,10 @@ cmd - down : yabai -m window --focus south
 cmd - up : yabai -m window --focus north
 cmd - right : yabai -m window --focus east
 
+# focus display
+shift + ctrl - 1 : yabai -m display --focus 1
+shift + ctrl - 2 : yabai -m display --focus 2
+
 # swap window
 # shift + cmd - left : yabai -m window --swap west
 # shift + cmd - down : yabai -m window --swap south
@@ -15,6 +19,18 @@ shift + cmd - left : yabai -m window --warp west
 shift + cmd - down : yabai -m window --warp south
 shift + cmd - up : yabai -m window --warp north
 shift + cmd - right : yabai -m window --warp east
+
+# send window to space
+shift + cmd - 1 : yabai -m window --space 1
+shift + cmd - 2 : yabai -m window --space 2
+shift + cmd - 3 : yabai -m window --space 3
+shift + cmd - 4 : yabai -m window --space 4
+shift + cmd - 5 : yabai -m window --space 5
+shift + cmd - 6 : yabai -m window --space 6
+
+# send window to display
+ctrl + cmd - 1 : yabai -m window --display 1
+ctrl + cmd - 2 : yabai -m window --display 2
 
 # move window
 # shift + ctrl - a : yabai -m window --move rel:-20:0
