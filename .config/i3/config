@@ -50,7 +50,7 @@ exec --no-startup-id "sh -c \"GDK_BACKEND=x11 pamac-tray\""
 exec --no-startup-id system-config-printer-applet
 
 # Background image
-exec --no-startup-id "feh --bg-scale $HOME/OneDrive/images/Ubuntu-14-04-Default-Background-Jelly-Fish-004.jpg"
+exec --no-startup-id "feh --bg-fill $HOME/OneDrive/images/MillkyWay.png"
 
 # Polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
