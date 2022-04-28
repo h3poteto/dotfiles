@@ -61,7 +61,7 @@ font-3 = Material Icons:size=13;4
 
 modules-left = launcher i3 filer xwindow
 modules-center =
-modules-right = deadd filesystem pulseaudio cpu temperature nvidia_info memory date powermenu
+modules-right = deadd filesystem pulseaudio mic-volume cpu temperature nvidia_info memory date powermenu
 
 tray-position = center
 tray-padding = 2
@@ -217,7 +217,7 @@ card = intel_backlight
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = " "
+format-prefix = " "
 format-prefix-foreground = ${colors.foreground-alt}
 ;format-underline = ${colors.primary}
 label = %percentage:2%%
@@ -287,29 +287,17 @@ label = %date% %time%
 [module/pulseaudio]
 type = internal/pulseaudio
 
-format-volume = <label-volume> <bar-volume>
-label-volume =  %percentage%%
+format-volume = <ramp-volume> <label-volume>
+label-volume = %percentage%%
 label-volume-foreground = ${colors.foreground}
 
 label-muted = ""
 label-muted-foreground = #666
 
-bar-volume-width = 10
-bar-volume-foreground-0 = ${colors.secondary}
-bar-volume-foreground-1 = ${colors.secondary}
-bar-volume-foreground-2 = ${colors.secondary}
-bar-volume-foreground-3 = ${colors.secondary}
-bar-volume-foreground-4 = ${colors.secondary}
-bar-volume-foreground-5 = ${colors.warning}
-bar-volume-foreground-6 = ${colors.alert}
-bar-volume-gradient = false
-bar-volume-indicator = |
-bar-volume-indicator-font = 2
-bar-volume-fill = ─
-bar-volume-fill-font = 2
-bar-volume-empty = ─
-bar-volume-empty-font = 2
-bar-volume-empty-foreground = ${colors.foreground-alt}
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-foreground = ${colors.foreground-alt}
 
 [module/alsa]
 type = internal/alsa
@@ -338,6 +326,16 @@ bar-volume-fill-font = 2
 bar-volume-empty = ─
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.foreground-alt}
+
+[module/mic-volume]
+type = custom/script
+interval = 1
+format =  <label>
+exec = bash ~/.config/polybar/polybar-mic-volume/mic-volume/mic-volume.sh show-vol 'alsa_input.usb-Raysound_USB_Microphone_201409-00.mono-fallback'
+
+click-left = bash ~/.config/polybar/polybar-mic-volume/mic-volume/mic-volume.sh mute-vol
+scroll-up = bash  ~/.config/polybar/polybar-mic-volume/mic-volume/mic-volume.sh inc-vol
+scroll-down = bash ~/.config/polybar/polybar-mic-volume/mic-volume/mic-volume.sh dec-vol
 
 [module/battery]
 type = internal/battery
@@ -401,7 +399,7 @@ ramp-foreground = ${colors.foreground-alt}
 type = custom/script
 tail = true
 exec-if = nvidia-smi
-exec = nvidia-smi --loop=1 --query-gpu=temperature.gpu,utilization.gpu,utilization.memory --format=csv,noheader,nounits | sed -ur 's|([[:digit:]]+)[^[:digit:]]*([[:digit:]]+)[^[:digit:]]*([[:digit:]]+)|GPU \2% \3% \1°|g'
+exec = nvidia-smi --loop=1 --query-gpu=temperature.gpu,utilization.gpu,utilization.memory --format=csv,noheader,nounits | sed -ur 's|([[:digit:]]+)[^[:digit:]]*([[:digit:]]+)[^[:digit:]]*([[:digit:]]+)| \2% \3% \1°|g'
 
 [module/powermenu]
 type = custom/menu
@@ -448,6 +446,7 @@ content = ""
 content-margin = 2
 content-underline = ${colors.primary}
 click-left = nemo
+
 
 [settings]
 screenchange-reload = true
