@@ -399,7 +399,7 @@ ramp-foreground = ${colors.foreground-alt}
 type = custom/script
 tail = true
 exec-if = nvidia-smi
-exec = nvidia-smi --loop=1 --query-gpu=temperature.gpu,utilization.gpu,utilization.memory --format=csv,noheader,nounits | sed -ur 's|([[:digit:]]+)[^[:digit:]]*([[:digit:]]+)[^[:digit:]]*([[:digit:]]+)| \2% \3% \1°|g'
+exec = nvidia-smi --loop=1 --query-gpu=temperature.gpu,utilization.gpu,utilization.memory --format=csv,noheader,nounits | sed -ur 's|([[:digit:]]+)[^[:digit:]]*([[:digit:]]+)[^[:digit:]]*([[:digit:]]+)| \2% \3% \1°C|g'
 
 [module/powermenu]
 type = custom/menu
