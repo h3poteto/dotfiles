@@ -9,16 +9,16 @@ shift + ctrl - 1 : yabai -m display --focus 1
 shift + ctrl - 2 : yabai -m display --focus 2
 
 # swap window
-# shift + cmd - left : yabai -m window --swap west
-# shift + cmd - down : yabai -m window --swap south
-# shift + cmd - up : yabai -m window --swap north
-# shift + cmd - right : yabai -m window --swap east
+shift + cmd - left : yabai -m window --swap west
+shift + cmd - down : yabai -m window --swap south
+shift + cmd - up : yabai -m window --swap north
+shift + cmd - right : yabai -m window --swap east
 
 # move window
-shift + cmd - left : yabai -m window --warp west
-shift + cmd - down : yabai -m window --warp south
-shift + cmd - up : yabai -m window --warp north
-shift + cmd - right : yabai -m window --warp east
+# shift + cmd - left : yabai -m window --wrap west
+# shift + cmd - down : yabai -m window --warp south
+# shift + cmd - up : yabai -m window --warp north
+# shift + cmd - right : yabai -m window --warp east
 
 # send window to space
 shift + cmd - 1 : yabai -m window --space 1
