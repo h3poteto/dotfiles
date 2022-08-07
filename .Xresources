@@ -28,6 +28,7 @@ URxvt.visualBell:           true
 URxvt.saveLines:            30000
 URxvt.font:                 xft:Ubuntu Mono derivative Powerline-11,\
                             xft:Ricty Diminished Discord
+URxvt.perl-ext-common:      resize-font
 
 URxvt.depth:       32
 URxvt.color0:      [100]#000000    /* black          */
