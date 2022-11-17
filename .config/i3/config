@@ -233,6 +233,8 @@ client.urgent           #2f343a #5294e2 #ffffff #5294e2   #3e646f
 client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
 
 # Hide window title bar
+hide_edge_borders both
+# hide_egde_borders both
 # default_border pixel 1
 # default_floating_border pixel 1
 
