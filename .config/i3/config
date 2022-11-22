@@ -35,7 +35,7 @@ exec --no-startup-id nm-applet
 exec --no-startup-id picom -CGbm 0.75
 
 # fcitx
-exec --no-startup-id fcitx-autostart
+exec --no-startup-id fcitx5
 
 # Notification center
 exec --no-startup-id deadd-notification-center
