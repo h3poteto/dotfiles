@@ -53,10 +53,8 @@ padding-right = 2
 module-margin-left = 1
 module-margin-right = 2
 
-font-0 = fixed:pixelsize=10;1
-font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
-font-2 = siji:pixelsize=10;1
-font-3 = Material Icons:size=13;4
+font-0 = Ubuntu:size=10;1
+font-1 = Material Icons:size=13;4
 
 
 modules-left = launcher i3 filer xwindow
@@ -399,7 +397,7 @@ ramp-foreground = ${colors.foreground-alt}
 type = custom/script
 tail = true
 exec-if = nvidia-smi
-exec = nvidia-smi --loop=1 --query-gpu=temperature.gpu,utilization.gpu,utilization.memory --format=csv,noheader,nounits | sed -ur 's|([[:digit:]]+)[^[:digit:]]*([[:digit:]]+)[^[:digit:]]*([[:digit:]]+)| \2% \3% \1°C|g'
+exec = nvidia-smi --loop=1 --query-gpu=temperature.gpu,utilization.gpu,utilization.memory --format=csv,noheader,nounits | sed -ur 's|([[:digit:]]+)[^[:digit:]]*([[:digit:]]+)[^[:digit:]]*([[:digit:]]+)| \\2% \\3% \\1°C|g'
 
 [module/powermenu]
 type = custom/menu
