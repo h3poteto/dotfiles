@@ -329,11 +329,7 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 type = custom/script
 interval = 1
 format =  <label>
-exec = bash ~/.config/polybar/polybar-mic-volume/mic-volume/mic-volume.sh show-vol 'alsa_input.usb-Raysound_USB_Microphone_201409-00.mono-fallback'
-
-click-left = bash ~/.config/polybar/polybar-mic-volume/mic-volume/mic-volume.sh mute-vol
-scroll-up = bash  ~/.config/polybar/polybar-mic-volume/mic-volume/mic-volume.sh inc-vol
-scroll-down = bash ~/.config/polybar/polybar-mic-volume/mic-volume/mic-volume.sh dec-vol
+exec = bash ~/.config/polybar/mic.sh
 
 [module/battery]
 type = internal/battery
