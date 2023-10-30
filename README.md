@@ -53,3 +53,5 @@ $ pip install psutil
 ### tmux
 Read [tmux](./.tmux).
 
+### Resize font in URxvt
+Download [urxvt-resize-font](https://github.com/simmel/urxvt-resize-font), and store it under `$HOME/.urxvt/ext/`.
