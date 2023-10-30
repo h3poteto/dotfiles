@@ -26,8 +26,8 @@ URxvt.scrollstyle:          plain
 URxvt.cursorBlink:          true
 URxvt.visualBell:           true
 URxvt.saveLines:            30000
-URxvt.font:                 xft:Ubuntu Mono derivative Powerline-11,\
-                            xft:Ricty Diminished Discord
+URxvt.font:                 xft:Ubuntu Mono derivative Powerline-11:pixelsize=14,\
+                            xft:Ricty Diminished Discord:pixelsize=14
 URxvt.perl-ext-common:      resize-font
 
 URxvt.depth:       32
@@ -53,3 +53,8 @@ URxvt.scrollColor:          [90]#504945
 
 URxvt.inputMethod: fcitx
 URxvt.preeditType: OverTheSpot
+
+URxvt.keysym.C-Down:     resize-font:smaller
+URxvt.keysym.C-Up:      resize-font:bigger
+URxvt.keysym.C-equal:     resize-font:reset
+URxvt.keysym.C-slash:  resize-font:show
