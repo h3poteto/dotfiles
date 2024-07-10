@@ -1,0 +1,23 @@
+import = [
+    "~/.config/alacritty/themes/themes/monokai_charcoal.toml"
+]
+
+[window]
+opacity=0.8
+
+[font]
+
+# Normal font style
+normal = { family = "Ubuntu Mono derivative Powerline", style = "Regular" }  # Default for Linux/BSD: "monospace", Regular
+
+# Bold font style
+bold = { style = "Bold" }  # Inherits family from normal, Default style: Bold
+
+# Italic font style
+italic = { style = "Italic" }  # Inherits family from normal, Default style: Italic
+
+# Bold Italic font style
+bold_italic = { style = "Bold Italic" }  # Inherits family from normal, Default style: Bold Italic
+
+# Font size in points
+size = 11.25  # Default: 11.25es
