@@ -1,5 +1,7 @@
 xset s off
 xset dpms 3600 3600 3660
+xrandr --output DP-4 --brightness .7
+
 export GTK_IM_MODULE=fcitx
 export QT_IM_MODULE=fcitx
 export XMODIFIERS=@im=fcitx
