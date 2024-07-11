@@ -4,6 +4,7 @@ import = [
 
 [window]
 opacity=0.8
+option_as_alt="OnlyLeft"
 
 [font]
 
@@ -21,3 +22,54 @@ bold_italic = { style = "Bold Italic" }  # Inherits family from normal, Default 
 
 # Font size in points
 size = 11.25  # Default: 11.25es
+
+# For tmux bindings
+[[keyboard.bindings]]
+key = "<"
+mods = "Super|Shift"
+chars = "\u001B<"
+
+[[keyboard.bindings]]
+key = ">"
+mods = "Super|Shift"
+chars = "\u001B>"
+
+[[keyboard.bindings]]
+key = "R"
+mods = "Super|Shift"
+chars = "\u001BR"
+
+[[keyboard.bindings]]
+key = "b"
+mods = "Super"
+chars = "\u001Bb"
+
+[[keyboard.bindings]]
+key = "f"
+mods = "Super"
+chars = "\u001Bf"
+
+[[keyboard.bindings]]
+key = "m"
+mods = "Super"
+chars = "\u001Bm"
+
+[[keyboard.bindings]]
+key = "r"
+mods = "Super"
+chars = "\u001Br"
+
+[[keyboard.bindings]]
+key = "v"
+mods = "Super"
+chars = "\u001Bv"
+
+[[keyboard.bindings]]
+key = "w"
+mods = "Super"
+chars = "\u001Bw"
+
+[[keyboard.bindings]]
+key = "x"
+mods = "Super"
+chars = "\u001Bx"
