@@ -73,3 +73,18 @@ chars = "\u001Bw"
 key = "x"
 mods = "Super"
 chars = "\u001Bx"
+
+[[keyboard.bindings]]
+key = "Up"
+mods = "Control"
+action = "IncreaseFontSize"
+
+[[keyboard.bindings]]
+key = "Down"
+mods = "Control"
+action = "DecreaseFontSize"
+
+[[keyboard.bindings]]
+key = "="
+mods = "Control|Shift"
+action = "ResetFontSize"
