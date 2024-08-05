@@ -34,6 +34,7 @@ $ ln -s ~/dotfiles/.config/deadd ~/.config/deadd
 ```
 $ yay -S picom
 $ ln -s ~/dotfiles/.config/picom ~/.config/picom
+$ rm ~/.config/picom.conf
 ```
 
 ### powerline
@@ -53,5 +54,14 @@ $ pip install psutil
 ### tmux
 Read [tmux](./.tmux).
 
-### Resize font in URxvt
-Download [urxvt-resize-font](https://github.com/simmel/urxvt-resize-font), and store it under `$HOME/.urxvt/ext/`.
+### Fonts
+
+```
+$ ln -s ~/dotfiles/.config/fontconfig ~/.config/fontconfig
+```
+
+### Alacritty
+```
+$ yay -S alacritty
+$ ln -s ~/dotfiles/.config/alacritty ~/.config/alacritty
+```
