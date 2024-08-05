@@ -18,3 +18,4 @@ $ ln -s ~/dotfiles/.config/polybar ~/.config/polybar
 - ulauncher
 - maim
 - nemo
+- feh
