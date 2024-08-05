@@ -1,0 +1,41 @@
+notification-center:
+  hide-on-mouse-leave: true
+  margin-top: 30
+  margin-bottom: 0
+  margin-right: 0
+  width: 320
+  monitor: 0
+  follow-mouse: true
+  new-first: true
+  ignore-transient: false
+  buttons:
+    buttons-per-row: 5
+    buttons-height: 60
+    buttons-margin: 2
+
+notification:
+  use-markup: true
+  parse-html-entities: true
+  dbus:
+    send-noti-closed: false
+  app-icon:
+    guess-icon-from-name: true
+    icon-size: 20
+  image:
+    size: 100
+    margin-top: 15
+    margin-bottom: 15
+    margin-left: 15
+    margin-right: 0
+  popup:
+    default-timeout: 10000
+    margin-top: 30
+    margin-right: 4
+    margin-between: 12
+    monitor: 0
+    follow-mouse: true
+    max-line-in-body: 5
+    click-behavior:
+      dissmiss: mouse3
+      default-action: mouse1
+

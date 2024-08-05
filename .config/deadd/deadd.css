@@ -36,6 +36,11 @@
     background: rgba(204, 87, 93, 0.8);
 }
 
+.notification.content {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
 /* Labels */
 
 label {
