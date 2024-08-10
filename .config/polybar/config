@@ -381,7 +381,7 @@ warn-temperature = 60
 ; $ for i in /sys/class/hwmon/hwmon*/temp*_input; do echo "$(<$(dirname $i)/name): $(cat ${i%_*}_label 2>/dev/null || echo $(basename ${i%_*})) $(readlink -f $i)"; done
 ; to find path to desired file
 ; Default reverts to thermal zone setting
-hwmon-path = /sys/devices/pci0000:00/0000:00:18.3/hwmon/hwmon0/temp2_input
+hwmon-path =  /home/akira/.config/polybar/cpu_temp
 
 format = <ramp> <label>
 format-warn = <ramp> <label-warn>
