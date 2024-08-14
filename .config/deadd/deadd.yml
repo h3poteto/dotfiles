@@ -36,6 +36,5 @@ notification:
     follow-mouse: true
     max-line-in-body: 5
     click-behavior:
-      dissmiss: mouse3
+      dismiss: mouse3
       default-action: mouse1
-
