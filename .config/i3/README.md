@@ -11,4 +11,5 @@ And it needs polybar, so please see [polybar](../polybar).
 ## Dependencies
 ```
 $ yay -S fcitx5 fcitx5-im
+$ yay -S xss-lock
 ```
