@@ -38,7 +38,9 @@ exec --no-startup-id picom -CGbm 0.75
 exec --no-startup-id fcitx5
 
 # Notification center
-exec --no-startup-id deadd-notification-center
+# Usually deadd is launched by systemd. Please enable it in systemd.
+# systemctl --user enable deadd-notification-center
+# exec --no-startup-id deadd-notification-center
 
 # Clipboard
 exec --no-startup-id parcellite
