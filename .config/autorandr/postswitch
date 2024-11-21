@@ -1,0 +1,5 @@
+#!/bin/bash
+xrandr --auto
+feh --bg-fill $HOME/Pictures/wallpaper.png
+pkill picom
+picom -CGbm 0.75 
