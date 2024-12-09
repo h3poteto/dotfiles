@@ -32,7 +32,7 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock-fancy --nofork
 exec --no-startup-id nm-applet
 
 # Composition for i3
-exec --no-startup-id picom -CGbm 0.75
+exec --no-startup-id picom -bm 0.75
 
 # fcitx
 exec --no-startup-id fcitx5
