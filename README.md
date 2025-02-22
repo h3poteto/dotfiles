@@ -65,3 +65,9 @@ $ ln -s ~/dotfiles/.config/fontconfig ~/.config/fontconfig
 $ yay -S alacritty
 $ ln -s ~/dotfiles/.config/alacritty ~/.config/alacritty
 ```
+
+### Rofi
+```
+$ yay -S lofi
+$ ln -s ~/dotfiles/.config/rofi ~/.config/rofi
+```
