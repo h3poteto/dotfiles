@@ -15,7 +15,7 @@ $ ln -s ~/dotfiles/.config/polybar ~/.config/polybar
 - picom
 - pulseaudio
 - pavucontrol
-- rofi
+- ulauncher
 - maim
 - nemo
 - feh
