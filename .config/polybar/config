@@ -84,7 +84,7 @@ type=custom/text
 content = ""
 content-margin = 4
 content-underline = ${colors.primary}
-click-left = rofi -show drun
+click-left = ulauncher
 
 [module/xwindow]
 type = internal/xwindow
